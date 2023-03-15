@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+    <head>
+             
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- *****************Bootstrap CDN********************************* -->
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- *******************Font awesome CDN **************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <!-- ******************Google Fonts********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gloock&family=Lobster&family=PT+Serif:ital@1&family=Poppins:ital,wght@1,200&family=Roboto:wght@100;400&family=Rubik&display=swap"
+            rel="stylesheet">
+
+            
+
+
+        <title>JSON example</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+          
+
+
+       <!--creating navbar-->
+          
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light fs-5">
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-address-card"></i>&nbsp;&nbsp;About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-square-question"></i>&nbsp;&nbsp;FAQ</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">🇬🇧 English</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-dollar-sign"></i>&nbsp;&nbsp;US doller</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-regular fa-user"></i>Main Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-truck"></i>&nbsp;&nbsp;Delivery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </div>
+    
+
+    <!--creating navbar footer-->
+    <section class=" footer-1 bg-light section mt-4">
+      <div class="container con">
+        <div class="row align-items-center top-nav">
+          <div class="col-lg-2">
+            <div class="logo">
+              <h1><b>JOURNAL</b></h1>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="search-box">
+              <form action="#" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search...">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4  iconcls">
+            <div class="icons d-flex justify-content-end align-items-center" id="iconid">
+              <span class="mr-3" style="cursor: pointer;"><i class="far fa-user"></i> Login</span>
+              <span class="mr-3" style="cursor: pointer;"><i class="fas fa-pen-to-square"></i> Registration</span>
+              <span class="mr-3" style="cursor: pointer;"><i class="far fa-heart"></i> Wishlist</span>
+              <span class="mr-3" style="cursor: pointer;"><i class="fas fa-balance-scale"></i> Compare</span>
+              <span class="mr-3" style="cursor: pointer;"><i class="fas fa-truck"></i> Delivery</span>
+              <span class="ml-3"><i class="fas fa-dollar-sign"></i>--<i class="fas fa-dollar-sign"></i> Prices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+      <!--creating blue region-->
+      <div class="container-fluid blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 display">
+              <div class=" col-md-3 yellow">  <h5>&nbsp;&nbsp;<i class="fa-solid fa-bars"></i> &nbsp;&nbsp;All Department</h5></div>
+              <div class=" col-md-2 white"> <h5>Hiring</h5></div>
+              <div class=" col-md-2 white"> <h5>Develope</h5></div>
+              <div class=" col-md-2 white"> <h5>Hiring</h5></div>
+            </div>
+            <div class="col-md-5 display">
+                    <div>
+                         <h5 class=" white"><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;&nbsp;1800,412,5231</h5>
+                    </div>
+                    <div>
+                        <h5 class="white"><i class="fa-solid fa-laptop-mobile"></i>BLOG</h5>
+                    </div>
+            </div>
+          </div>
+        </div>
+       </div> 
+
+
+
+   
+
+       <div class="container">
+  <div class="row">
+    <div class="col-md-8 color">
+    <div class="container1">
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="caption">
+                    <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Custom button
+</button>
+                    <h2>Slide1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti nemo incidunt deserunt obcaecati vero dolor explicabo tempore, rem quas cum vitae magni dolores. Delectus voluptatem dicta quam assumenda est.</p>
+                   
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="caption">
+                    <h2>Slide2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti nemo incidunt deserunt obcaecati vero dolor explicabo tempore, rem quas cum vitae magni dolores. Delectus voluptatem dicta quam assumenda est.</p>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="caption">
+                    <h2>Slide3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti nemo incidunt deserunt obcaecati vero dolor explicabo tempore, rem quas cum vitae magni dolores. Delectus voluptatem dicta quam assumenda est.</p>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="caption">
+                    <h2>Slide4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti nemo incidunt deserunt obcaecati vero dolor explicabo tempore, rem quas cum vitae magni dolores. Delectus voluptatem dicta quam assumenda est.</p>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="caption">
+                    <h2>Slide1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti nemo incidunt deserunt obcaecati vero dolor explicabo tempore, rem quas cum vitae magni dolores. Delectus voluptatem dicta quam assumenda est.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+   
+</div>
+<div class="col-md-4">
+    <div class="container conter">
+    <div class="slidee slide1">
+        <div class="caption">
+            <h1>Slide1</h1>
+        
+        </div>
+    </div>
+    <div class="slidee slide2">
+        <div class="caption">
+            <h1>Slide1</h1>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<section class="services-container body-spacer">
+  <!-- 1.Free shiping  -->
+
+  <div class="free-shiping-container">
+    <div class="icon-container">
+      <div class="icon">
+        <i class="fa-solid fa-truck-fast"></i>
+      </div>
+    </div>
+    <div class="text">
+      <h2>Free Shipping</h2>
+    </div>
+  </div>
+
+  <!-- 2.Free returns  -->
+
+  <div class="free-shiping-container">
+    <div class="icon-container">
+      <div class="icon">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+      </div>
+    </div>
+    <div class="text">
+      <h2>Free Shipping</h2>
+    </div>
+  </div>
+
+  <!-- 3.Secure shoping -->
+
+  <div class="free-shiping-container">
+    <div class="icon-container">
+      <div class="icon">
+      
+      </div>
+    </div>
+    <div class="text">
+      <h2>Free Shipping</h2>
+      
+    </div>
+  </div>
+
+  <!-- 4.Unlimited Blocks -->
+
+  <div class="free-shiping-container">
+    <div class="icon-container">
+      <div class="icon">
+        <i class="fa-solid fa-cube"></i>
+      </div>
+    </div>
+    <div class="text">
+      <h2>Free Shipping</h2>
+    </div>
+  </div>
+</section>
+
+
+<div class="container text-center  mt-4 ">
+  <h1>Why Buy from us ?</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque nesciunt iure quasi maiores
+      perferendis
+      iste labore inventore numquam itaque!</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing <a href="#">learn more</a></p>
+      <div id = "product-list-3" class="d-flex">
+         
+      </div>
+
+
+</div>
+       
+          <!--Product cart-->
+          <div class="text-center featured-heading m-5">
+            <b>Featured Products</b>
+          </div>
+          <div class="container">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error commodi minima rerum architecto. Itaque repudiandae aliquam qui maxime earum ullam tempora fugiat. 
+            </br>Vitae facilis soluta explicabo sint dolores ratione praesentium.</p>
+          </div>
+          <div class="container text-center">
+            <button class="btn btn-primary category-btn" data-category="Category 1">Category 1</button>
+            <button class="btn btn-primary category-btn" data-category="Category 2">Category 2</button>
+            <button class="btn btn-primary category-btn" data-category="Category 3">Category 3</button>
+            <button class="btn btn-primary category-btn" data-category="Category 4">Category 4</button>
+            <button class="btn btn-primary category-btn" data-category="Category 5">Category 5</button>
+          </div>
+           <div id="product-list" class="d-flex"></div>
+           
+
+
+
+          
+
+        <section>
+
+            <div class="container-fluid  bg-light m-5 text-center">
+                <h1>Featured Category</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni laboriosam accusantium provident quod
+                    voluptas? Natus earum quasi labore quidem vel?</p>
+                    <div class="container text-center">
+                      <button class="btn btn-primary category-btn" data-category="Category 1">Category 1</button>
+                      <button class="btn btn-primary category-btn" data-category="Category 2">Category 2</button>
+                      <button class="btn btn-primary category-btn" data-category="Category 3">Category 3</button>
+                      <button class="btn btn-primary category-btn" data-category="Category 4">Category 4</button>
+                      <button class="btn btn-primary category-btn" data-category="Category 5">Category 5</button>
+                    </div>
+                      <div id="product-list-2" class="d-flex"></div>
+                  </div>
+                 
+                    
+                </div>
+                 
+            </div>
+
+        </section>
+        <section>
+            <div class="container-fluid bg-light text-center p-4">
+                <h1> shop by brands </h1>
+                <div class="row brands ">
+                    <div class="col-md-2">
+                        <div class="card cus-card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card cus-card">
+                            <img src="img/logo-envato.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card cus-card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card cus-card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card cus-card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- improved gallery modules -->
+        <section>
+            <div class="container-fluid m-4 improved text-center p-4">
+                <h1>Improve Gallery Module</h1>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, distinctio nam nemo reiciendis
+                    expedita nihil iusto, exercitationem sint accusamus ipsum saepe! Nam obcaecati explicabo hic, ab
+                    officia
+                    saepe dolorum blanditiis
+                    laudantium aut expedita consectetur modi facilis iusto sequi assumenda rem ipsum dolor sit amet </p>
+
+                <div class="row brands p-4">
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-envato.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/logo-givve.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="card">
+                            <img src="img/large_vitalvale.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container text-center p-4">
+                <h1>from our blog</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique expedita facilis incidunt tempora
+                    cupiditate, enim quod nisi sed. Magnam, facere.
+                </p>
+
+
+                <div class="row from-our-blog ">
+                    <div class="col-md-4 ">
+                        <div class="card h-100">
+                            <img src="img/bag.jpg" height="400px">
+                            <div class="card-body">
+                                <div class=" admin-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>19340</p>
+                                </div>
+                                <h5 class="card-title">Another Blog post</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/shoes.jpg" height="400px">
+                            <div class="card-body">
+                                <div class=" admin-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>19340</p>
+                                </div>
+                                <h5 class="card-title">Best Leather Bags</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional
+                                    content.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="img/smartwatch.jpg" height="400px">
+                            <div class="card-body">
+                                <div class=" admin-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>admin</p>
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <p>38</p>
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>19340</p>
+                                </div>
+                                <h5 class="card-title">Journal Blog is Here</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This card has even longer content than the first to show that
+                                    equal
+                                    height action.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid what-people text-center p-4">
+                <h1>what people are saying about us?</h1>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="quote-icon p-4">
+                                <i class="fa-solid fa-quote-left "></i>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta vero vitae mollitia
+                                quasi a
+                                numquam inventore consectetur amet nobis.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <div class="most-viewed container-fluid bg-light">
+            <div class="row">
+                <div class="col-md-3 d-flex ">
+
+                    <div class="images">
+                        <img src="img/shoes.jpg" height="100px" width="100px" />
+                    </div>
+                    <div class="name">
+                        <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                        <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                                class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    </div>
+                </div>
+
+                <div class=" col-md-3 d-flex">
+
+                    <div class="images">
+                        <img src="img/bag.jpg" height="100px" width="100px" />
+                    </div>
+                    <div class="name">
+                        <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                        <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                                class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    </div>
+                </div>
+                <div class=" col-md-3 d-flex">
+
+                    <div class="images">
+                        <img src="img/smartwatch.jpg" height="100px" width="100px" />
+                    </div>
+                    <div class="name">
+                        <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                        <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                                class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex">
+
+                    <div class="images">
+                        <img src="img/shoes.jpg" height="100px" width="100px" />
+                    </div>
+                    <div class="name">
+                        <p>Oversized Sunglasses For Lon...<br>$397.00</p>
+                        <p><i class="fa-solid fa-cart-shopping"></i> <i class="fa-regular fa-heart"></i> <i
+                                class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!--social media icons-->
+<section class="social">
+  <p>
+      <a ><i class="fa-brands fa-facebook"></i></a>
+      <a ><i class="fa-brands fa-twitter"></i></a>
+      <a ><i class="fa-brands fa-instagram"></i></a>
+      <a > <i class="fa-brands fa-linkedin"></i></a>
+      <a > <i class="fa-brands fa-youtube"></i></a>
+      <a > <i class="fa-brands fa-skype"></i></a>
+      <a > <i class="fa-brands fa-google-plus-g"></i></a>
+
+  </p>
+</section>
+
+
+
+    <!-- Footer  -->
+
+    <footer class="body-spacer">
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+          <h2>About Us</h2>
+          <hr>
+          <ul>
+              <li><a >About Us</a></li>
+              <li><a >Delivery</a></li>
+              <li><a >Privacy Policy</a></li>
+              <li><a >Terms & Condition</a></li>
+              <li><a >Custom Links</a></li>
+          </ul>
+      </div>
+
+
+      <div class="col-md-3">
+          <h2>Customer Service</h2>
+          <hr>
+          <ul>
+              <li><a >Contact</a></li>
+              <li><a >Returns</a></li>
+              <li><a >Site Map</a></li>
+              <li><a >Brands</a></li>
+              <li><a >Unlimited Links</a></li>
+          </ul>
+      </div>
+
+
+
+      <div class="col-md-3">
+          <h2>My Account</h2>
+          <hr>
+          <ul>
+              <li><a >My Account</a></li>
+              <li><a >Order History</a></li>
+              <li><a >Affiliats</a></li>
+              <li><a >Newslatter</a></li>
+              <li><a >Gifts Certificates</a></li>
+          </ul>
+      </div>
+
+      <div class="col-md-3">
+          <h2>Newsletter</h2>
+          <hr>
+          <p class="para">Stay up to date with news and promotions by signing up for promotions</p>
+
+          <div class="input-container"> <input type="email" placeholder="Your email">
+              <button><i class="fa-regular fa-envelope"></i> Send</button>
+          </div>
+          <p> <input type="checkbox" name="" id=""> I have read and aggry to the <a >Privacy Policy</a></p>
+      </div>
+
+    </div>
+  </div>
+  </footer>
+      
+            <script src="script.js" ></script>
+    </body>
+</html>
